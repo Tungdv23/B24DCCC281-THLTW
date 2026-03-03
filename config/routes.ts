@@ -1,4 +1,7 @@
-﻿export default [
+﻿import component from "@/locales/en-US/component";
+import { icons } from "antd/lib/image/PreviewGroup";
+
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -23,6 +26,21 @@
 		name: 'Dashboard',
 		component: './TrangChu',
 		icon: 'HomeOutlined',
+	},
+	{
+		path: '/tro-choi',
+		name: 'trò chơi',
+		component: './TroChoi',
+	},
+	{
+		path: '/bai2',
+		name: 'bài 2',
+		component: './Bai2',
+	},
+	{
+		path:"/san-Pham",
+		name:"SanPham",
+		component:"./SanPham",
 	},
 	{
 		path: '/gioi-thieu',
