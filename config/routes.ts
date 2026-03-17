@@ -60,6 +60,12 @@ export default [
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
+	{
+		path: '/lich-hen',
+		name: 'Lịch hẹn',
+		icon: 'CalendarOutlined',
+		component: './LichHen/LichHen',
+	},
 
 	// DANH MUC HE THONG
 	// {
