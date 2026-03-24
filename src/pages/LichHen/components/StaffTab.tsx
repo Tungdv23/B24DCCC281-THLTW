@@ -13,7 +13,6 @@ type Props = {
 };
 
 const StaffTab: React.FC<Props> = ({ staff, services, onAdd, onEdit, onDelete, getServiceName }) => {
-  // Vietnamese local aliases
   const danhSachNhanVien = staff;
   const danhSachDichVu = services;
   const them = onAdd;

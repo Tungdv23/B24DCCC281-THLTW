@@ -1,5 +1,6 @@
 ﻿import component from "@/locales/en-US/component";
 import { icons } from "antd/lib/image/PreviewGroup";
+import path from "path";
 
 export default [
 	{
@@ -26,6 +27,11 @@ export default [
 		name: 'Dashboard',
 		component: './TrangChu',
 		icon: 'HomeOutlined',
+	},
+	{
+		path: '/VanBang',
+		name: 'VanBang',
+		component: './VanBang',
 	},
 	{
 		path: '/tro-choi',

@@ -8,4 +8,10 @@ export default {
   'menu.DanhMuc': 'Danh mục',
   'menu.DanhMuc.ChucVu': 'Chức vụ',
   'menu.DanhMuc.LoaiPhongBan': 'Loại phòng ban',
+  'menu.VanBang': 'Certificates',
+  'menu.VanBang.QuanLySo': 'Books',
+  'menu.VanBang.QuyetDinh': 'Decisions',
+  'menu.VanBang.BieuMau': 'Templates',
+  'menu.VanBang.ThongTin': 'Certificates',
+  'menu.VanBang.TraCuu': 'Lookup',
 };

@@ -75,7 +75,7 @@ const LichHen: React.FC = () => {
   const changeAppointmentStatus = (id: string, status: Appointment['status']) => setData(prev => ({ ...prev, appointments: prev.appointments.map(a => a.id === id ? { ...a, status, updatedAt: new Date().toISOString() } : a) }));
   const handleDeleteAppointment = (id: string) => { setData(prev => ({ ...prev, appointments: prev.appointments.filter(a => a.id !== id) })); message.success('Xóa lịch hẹn thành công'); };
 
-  // Reviews
+
   const openReviewModal = (appointment: Appointment) => { setSelectedAppointment(appointment); setReviewModalVisible(true); };
   const handleSaveReview = (values: any) => {
     if (!selectedAppointment) return;
