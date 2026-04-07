@@ -29,6 +29,37 @@ export default [
 		icon: 'HomeOutlined',
 	},
 	{
+		path: '/du-lich',
+		name: 'Du lịch',
+		routes: [
+			{
+				path: '/du-lich',
+				exact: true,
+				redirect: '/du-lich/explore',
+			},
+			{
+				path: '/du-lich/explore',
+				name: 'Khám phá',
+				component: './DuLich',
+			},
+			{
+				path: '/du-lich/lich-trinh',
+				name: 'Lập kế hoạch',
+				component: './LichTrinh',
+			},
+			{
+				path: '/du-lich/admin',
+				name: 'Quản trị điểm đến',
+				component: './Admin/DiaDiem',
+			},
+		],
+	},
+	{
+		path: '/club-management',
+		name: 'Quản lý CLB',
+		component: './ClubManagement',
+	},
+	{
 		path: '/VanBang',
 		name: 'VanBang',
 		component: './VanBang',
@@ -72,6 +103,7 @@ export default [
 		icon: 'CalendarOutlined',
 		component: './LichHen/LichHen',
 	},
+	// moved LichTrinh and Admin under /du-lich
 
 	// DANH MUC HE THONG
 	// {
@@ -111,6 +143,7 @@ export default [
 	},
 	{
 		path: '/',
+		redirect: '/dashboard',
 	},
 	{
 		path: '/403',
