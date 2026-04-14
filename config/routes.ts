@@ -98,6 +98,12 @@ export default [
 		component: './TodoList',
 	},
 	{
+		path: '/quan-ly-khoa-hoc',
+		name: 'Quản lý khóa học',
+		icon: 'BookOutlined',
+		component: './QuanLyKhoaHoc',
+	},
+	{
 		path: '/lich-hen',
 		name: 'Lịch hẹn',
 		icon: 'CalendarOutlined',
