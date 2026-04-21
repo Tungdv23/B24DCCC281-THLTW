@@ -54,6 +54,22 @@ export default [
 			},
 		],
 	},
+		{
+			path: '/admin',
+			name: 'Quản trị',
+			routes: [
+				{
+					path: '/admin/tin-tuc',
+					name: 'Quản lý bài viết',
+					component: './Admin/TinTuc',
+				},
+				{
+					path: '/admin/tags',
+					name: 'Quản lý thẻ',
+					component: './Admin/Tags',
+				},
+			],
+		},
 	{
 		path: '/club-management',
 		name: 'Quản lý CLB',
@@ -86,10 +102,33 @@ export default [
 		hideInMenu: true,
 	},
 	{
-		path: '/random-user',
+	path: '/random-user',
 		name: 'RandomUser',
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
+	},
+	{
+	path: '/tin-tuc',
+	name: 'Tin tức',
+	routes: [
+		{
+			path: '/tin-tuc',
+			exact: true,
+			component: './TinTuc',
+		},
+		{
+			path: '/tin-tuc/detail',
+			exact: true,
+			component: './TinTuc/Detail',
+			hideInMenu: true,
+		},
+		{
+			path: '/tin-tuc/author',
+			exact: true,
+			component: './TinTuc/Author',
+			hideInMenu: true,
+		},
+	],
 	},
 	{
 		path: '/todo-list',

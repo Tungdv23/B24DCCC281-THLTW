@@ -2,8 +2,7 @@ import { Button, Input, Modal, Select, Space, message } from 'antd';
 import { useEffect, useMemo, useState } from 'react';
 import BangKhoaHoc from './components/CourseTable';
 import FormKhoaHoc from './components/CourseModalForm';
-import { KhoaHoc, GIANG_VIEN } from './types';
-import { taiKhoaHoc, luuKhoaHoc } from './utils';
+import { KhoaHoc, GIANG_VIEN, taoDuLieuMacDinh } from './types';
 
 const QuanLyKhoaHoc = () => {
   const [danhSach, setDanhSach] = useState<KhoaHoc[]>([]);
@@ -14,13 +13,9 @@ const QuanLyKhoaHoc = () => {
   const [locTrangThai, setLocTrangThai] = useState<string | null>(null);
 
   useEffect(() => {
-    const ds = taiKhoaHoc();
+    const ds = taoDuLieuMacDinh();
     setDanhSach(ds);
   }, []);
-
-  useEffect(() => {
-    luuKhoaHoc(danhSach);
-  }, [danhSach]);
 
   const duLieuLoc = useMemo(() => {
     return danhSach
