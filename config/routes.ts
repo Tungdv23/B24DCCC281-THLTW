@@ -29,6 +29,43 @@ export default [
 		icon: 'HomeOutlined',
 	},
 	{
+		path: '/the-duc',
+		name: 'Thể dục',
+		icon: 'HeartOutlined',
+		routes: [
+			{
+				path: '/the-duc',
+				exact: true,
+				redirect: '/the-duc/dashboard',
+			},
+			{
+				path: '/the-duc/dashboard',
+				name: 'Thể dục',
+				component: './TheDuc/Dashboard',
+			},
+			{
+				path: '/the-duc/nhat-ky-tap-luyen',
+				name: 'Nhật ký tập luyện',
+				component: './TheDuc/NhatKyTapLuyen',
+			},
+			{
+				path: '/the-duc/nhat-ky-suc-khoe',
+				name: 'Nhật ký sức khỏe',
+				component: './TheDuc/NhatKySucKhoe',
+			},
+			{
+				path: '/the-duc/muc-tieu',
+				name: 'Quản lý mục tiêu',
+				component: './TheDuc/QuanLyMucTieu',
+			},
+			{
+				path: '/the-duc/thu-vien-bai-tap',
+				name: 'Thư viện bài tập',
+				component: './TheDuc/ThuVienBaiTap',
+			},
+		],
+	},
+	{
 		path: '/du-lich',
 		name: 'Du lịch',
 		routes: [
