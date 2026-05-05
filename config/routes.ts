@@ -28,6 +28,7 @@ export default [
 		component: './TrangChu',
 		icon: 'HomeOutlined',
 	},
+
 	{
 		path: '/the-duc',
 		name: 'Thể dục',
@@ -168,11 +169,16 @@ export default [
 	],
 	},
 	{
-		path: '/todo-list',
-		name: 'TodoList',
-		icon: 'OrderedListOutlined',
-		component: './TodoList',
-	},
+ 		path: '/todo-list',
+ 		name: 'Công việc cá nhân',
+ 		icon: 'OrderedListOutlined',
+ 		routes: [
+ 			{ path: '/todo-list', exact: true, redirect: '/todo-list/dashboard' },
+ 			{ path: '/todo-list/dashboard', name: 'Dashboard', component: './TodoList/Dashboard' },
+ 			{ path: '/todo-list/kanban', name: 'Kanban', component: './TodoList/Kanban' },
+ 			{ path: '/todo-list/list', name: 'Danh sách', component: './TodoList/List' },
+ 		],
+ 	},
 	{
 		path: '/quan-ly-khoa-hoc',
 		name: 'Quản lý khóa học',
